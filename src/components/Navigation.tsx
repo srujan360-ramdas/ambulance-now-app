@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom";
 import { Bike } from "lucide-react";
+import ThemeToggle from "./ThemeToggle";
 
 const Navigation = () => {
   return (
@@ -9,7 +10,7 @@ const Navigation = () => {
           <Bike className="w-7 h-7 text-primary" />
           <h1 className="text-2xl font-bold text-primary">Bike Ambulance</h1>
         </div>
-        <div className="flex gap-6">
+        <div className="flex items-center gap-6">
           <NavLink
             to="/"
             className={({ isActive }) =>
@@ -58,6 +59,7 @@ const Navigation = () => {
           >
             Contact
           </NavLink>
+          <ThemeToggle />
         </div>
       </div>
     </nav>
